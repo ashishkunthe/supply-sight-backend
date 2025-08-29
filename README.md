@@ -1,46 +1,40 @@
-# SupplySight Backend (GraphQL Server)
+SupplySight Backend (GraphQL Server)
 
-This is the **GraphQL backend** for the SupplySight Dashboard.
-It runs on **Node.js with Apollo Server** and serves dummy inventory data.
+This is the "GraphQL backend" for the SupplySight Dashboard.
+It runs on "Node.js with Apollo Server" and serves dummy inventory data.
 
----
-
-## 🚀 Features
+Features
 
 - GraphQL API with schema & resolvers
 - Dummy data for products, warehouses, and KPIs
 - Supports queries & mutations:
 
-  - **Products Query** with optional filters (search, warehouse)
-  - **Warehouses Query**
-  - **KPIs Query** (date range)
-  - **Mutations**: Update demand & transfer stock
+  - "Products Query" with optional filters (search, warehouse)
+  - "Warehouses Query"
+  - "KPIs Query" (date range)
+  - "Mutations": Update demand & transfer stock
 
----
-
-## 🛠️ Tech Stack
+Tech Stack
 
 - Node.js
 - Apollo Server (GraphQL)
 
----
+Setup & Run (Backend)
 
-## ⚡ Setup & Run (Backend)
-
-### 1. Clone Repo
+1.  Clone Repo
 
 ```bash
 git clone https://github.com/your-username/supply-sight-backend.git
 cd supply-sight-backend
 ```
 
-### 2. Install Dependencies
+2.  Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 3. Start Server
+3.  Start Server
 
 ```bash
 npm start
@@ -48,15 +42,11 @@ npm start
 
 - Server runs at:
 
-  ```
   http://localhost:4000/graphql
-  ```
 
----
+Example Queries
 
-## 📊 Example Queries
-
-### Products Query
+Products Query
 
 ```graphql
 query {
@@ -71,7 +61,7 @@ query {
 }
 ```
 
-### Filtered Products
+Filtered Products
 
 ```graphql
 query {
@@ -86,7 +76,7 @@ query {
 }
 ```
 
-### Warehouses Query
+Warehouses Query
 
 ```graphql
 query {
@@ -99,7 +89,7 @@ query {
 }
 ```
 
-### KPIs Query
+KPIs Query
 
 ```graphql
 query {
@@ -111,7 +101,7 @@ query {
 }
 ```
 
-### Transfer Stock Mutation
+Transfer Stock Mutation
 
 ```graphql
 mutation {
@@ -126,10 +116,8 @@ mutation {
 }
 ```
 
----
+Notes
 
-## 📝 Notes
-
-- This backend uses **mock data only** for testing.
+- This backend uses "mock data only" for testing.
 - Extend resolvers & schema if you want persistence (e.g., with MongoDB or Postgres).
-- Designed to pair with the [SupplySight Frontend](https://github.com/your-username/supply-sight-frontend).
+- Designed to pair with the [SupplySight Frontend](https://github.com/ashishkunthe/supply-sight).
